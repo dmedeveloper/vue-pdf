@@ -23,7 +23,7 @@
     },
     "homepage": "https://github.com/dmehub/vue-pdf#readme",
     "dependencies": {
-        "pdfjs-dist": "2.4.6",
+        "pdfjs-dist": "^2.10.377",
         "raw-loader": "^4.0.2",
         "vue-resize-sensor": "^2.0.0"
     }
