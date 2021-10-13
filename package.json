@@ -1,6 +1,6 @@
 {
     "name": "@dmehub/vue-pdf",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Vue PDF Viewer",
     "main": "src/vuePdfNoSss.vue",
     "scripts": {
@@ -23,8 +23,8 @@
     },
     "homepage": "https://github.com/dmehub/vue-pdf#readme",
     "dependencies": {
-        "pdfjs-dist": "2.0.943",
-        "raw-loader": "^0.5.1",
+        "pdfjs-dist": "2.4.6",
+        "raw-loader": "^4.0.2",
         "vue-resize-sensor": "^2.0.0"
     }
 }
