@@ -1,15 +1,14 @@
 <style src="./annotationLayer.css"></style>
 <script>
-    import componentFactory from './componentFactory'
-    import pdfjsWrapper from './pdfjsWrapper'
+    import componentFactory from './componentFactory';
+    import pdfjsWrapper from './pdfjsWrapper';
+    import pdfjsWorker from "pdfjs-dist/build/pdf.worker.entry";
 
-    var PDFJS = require('pdfjs-dist/webpack');
+    var PDFJS = require("pdfjs-dist");
 
     if (process.env.VUE_ENV !== 'server') {
         if (typeof window !== 'undefined' && 'Worker' in window) {
-            var PdfjsWorker = require('worker-loader!pdfjs-dist/build/pdf.worker.js');
-
-            PDFJS.GlobalWorkerOptions.workerPort = new PdfjsWorker();
+            PDFJS.GlobalWorkerOptions.workerSrc = pdfjsWorker;
         }
     }
 
