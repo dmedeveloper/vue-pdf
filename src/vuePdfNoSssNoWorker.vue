@@ -4,7 +4,7 @@
 
     if (process.env.VUE_ENV !== 'server') {
         var pdfjsWrapper = require('./pdfjsWrapper.js').default;
-        var PDFJS = require('pdfjs-dist/webpack');
+        var PDFJS = require("pdfjs-dist");
         var component = componentFactory(pdfjsWrapper(PDFJS));
     } else {
         var component = componentFactory({});
