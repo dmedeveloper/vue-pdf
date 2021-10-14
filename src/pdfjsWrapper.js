@@ -1,4 +1,4 @@
-import { PDFLinkService } from 'pdfjs-dist/lib/web/pdf_link_service';
+import { PDFLinkService } from 'pdfjs-dist/web/pdf_viewer';
 
 export default function (PDFJS) {
     function isPDFDocumentLoadingTask(obj) {
